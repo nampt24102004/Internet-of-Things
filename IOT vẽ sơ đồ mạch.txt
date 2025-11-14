@@ -1,0 +1,44 @@
+IOT vẽ sơ đồ mạch
+AC Bulb:
+
+P (được kết nối với + của PLUG)
+N (được kết nối với COM của Relay)
+PLUG:
+
+(được kết nối với P của AC Bulb)
+(được kết nối với N.O. của Relay)
+1 Channel 5V Relay Module:
+
+N.O. (được kết nối với - của PLUG)
+COM (được kết nối với N của AC Bulb)
+IN (được kết nối với RX2 của ESP32)
+VCC+ (được kết nối với VCC của VS1838B và Sound Sensor)
+VCC- (được kết nối với GND của các thành phần khác)
+VS1838B IR Receiver:
+
+GND (được kết nối với GND của Sound Sensor, Relay, Temperature Sensor, Piezo Speaker, và ESP32)
+VCC (được kết nối với 5V + của Sound Sensor và +Vs của Temperature Sensor)
+OUT (được kết nối với D2 của ESP32)
+Sound Sensor:
+
+GND (được kết nối với GND của các thành phần khác)
+5V + (được kết nối với VCC của VS1838B)
+OUT (được kết nối với D13 của ESP32)
+Temperature Sensor (LM35):
+
+GND (được kết nối với GND của các thành phần khác)
++Vs (được kết nối với VCC của Relay)
+Vout (được kết nối với VP của ESP32)
+Piezo Speaker:
+
+pin1 (được kết nối với GND)
+pin2 (được kết nối với TX2 của ESP32)
+ESP32:
+
+GND (được kết nối với GND của các thành phần khác)
+D2 (được kết nối với OUT của VS1838B)
+RX2 (được kết nối với IN của Relay)
+TX2 (được kết nối với pin2 của Piezo Speaker)
+D13 (được kết nối với OUT của Sound Sensor)
+VP (được kết nối với Vout của Temperature Sensor)
+3V3 (cung cấp nguồn cho các thành phần khác)
